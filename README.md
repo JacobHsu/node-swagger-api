@@ -1,7 +1,5 @@
 ## Follow the steps below to create a RESTful server using swager!
 
-[How to create a Nodejs server and Add Swagger to a Project and deployed on vercel CLI](https://dev.to/milan960/how-to-create-a-nodejs-server-and-add-swagger-to-a-project-and-deployed-on-vercel-cli-39a8)
-
 ## Here is the Tree
 
 ```
