@@ -7,9 +7,7 @@ import swaggerJsDoc from "swagger-jsdoc";
 
 import bodyParser from "body-parser";
 
-// Import the router from the hello.js file
 import postRouter from "./src/Routes/posts.js";
-// import helloRouter from "./src/hello.js";
 
 // CDN CSS
 
@@ -39,12 +37,6 @@ const options = {
         email: "support@example.com",
       },
     },
-    // servers: [
-    //   {
-    //     url: "https://nodejs-swagger-api.vercel.app/",
-    //     description: "My API Documentation",
-    //   },
-    // ],
   },
   // This is to call all the file
   apis: ["src/**/*.js"],
