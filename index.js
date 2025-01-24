@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import swaggerUI from "swagger-ui-express";
 import swaggerJsDoc from "swagger-jsdoc";
 
-import bodyParser from "body-parser";
+// import bodyParser from "body-parser";
 
 import postRouter from "./src/Routes/posts.js";
 
@@ -16,7 +16,7 @@ const CSS_URL =
 
 const app = express();
 
-app.use(bodyParser.json()); // to use body object in requests
+// app.use(bodyParser.json()); // to use body object in requests
 const PORT = process.env.PORT || 2001;
 dotenv.config();
 
@@ -42,7 +42,6 @@ const options = {
 };
 
 const specs = swaggerJsDoc(options);
-// app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
 
 app.use(
   "/api-docs",
