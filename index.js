@@ -39,12 +39,12 @@ const options = {
         email: "support@example.com",
       },
     },
-    servers: [
-      {
-        url: "https://nodejs-swagger-api.vercel.app/",
-        description: "My API Documentation",
-      },
-    ],
+    // servers: [
+    //   {
+    //     url: "https://nodejs-swagger-api.vercel.app/",
+    //     description: "My API Documentation",
+    //   },
+    // ],
   },
   // This is to call all the file
   apis: ["src/**/*.js"],
