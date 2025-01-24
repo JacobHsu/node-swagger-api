@@ -1,11 +1,9 @@
 import express from "express";
 import cors from "cors";
 
-import dotenv from "dotenv";
 import swaggerUI from "swagger-ui-express";
 import swaggerJsDoc from "swagger-jsdoc";
 
-// import bodyParser from "body-parser";
 
 import postRouter from "./src/Routes/posts.js";
 
@@ -16,9 +14,7 @@ const CSS_URL =
 
 const app = express();
 
-// app.use(bodyParser.json()); // to use body object in requests
 const PORT = process.env.PORT || 2001;
-dotenv.config();
 
 app.use(cors());
 
@@ -49,10 +45,7 @@ app.use(
   swaggerUI.setup(specs, { customCssUrl: CSS_URL })
 );
 
-// Here we are calling the basic html
-// Use the router from the hello.js file
-// app.use("/", helloRouter);
-// Use the router from the post.js file
+
 app.use("/posts", postRouter);
 
 app.listen(PORT, () => console.log(`Server runs on port ${PORT}`));
