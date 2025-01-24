@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import morgan from "morgan";
+
 import dotenv from "dotenv";
 import swaggerUI from "swagger-ui-express";
 import swaggerJsDoc from "swagger-jsdoc";
@@ -20,7 +20,6 @@ app.use(bodyParser.json()); // to use body object in requests
 const PORT = process.env.PORT || 2001;
 dotenv.config();
 
-app.use(morgan("dev"));
 app.use(cors());
 
 const options = {
