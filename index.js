@@ -9,7 +9,7 @@ import bodyParser from "body-parser";
 
 // Import the router from the hello.js file
 import postRouter from "./src/Routes/posts.js";
-import helloRouter from "./src/hello.js";
+// import helloRouter from "./src/hello.js";
 
 // CDN CSS
 
@@ -61,7 +61,7 @@ app.use(
 
 // Here we are calling the basic html
 // Use the router from the hello.js file
-app.use("/", helloRouter);
+// app.use("/", helloRouter);
 // Use the router from the post.js file
 app.use("/posts", postRouter);
 
